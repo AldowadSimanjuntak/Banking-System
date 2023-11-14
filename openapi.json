@@ -1,0 +1,454 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Aldowad API",
+    "description": "This is my personal API based on the OpenAPI 3.0 specification with a basic banking system where you can make CRUD operations and it is secured with JsonWebToken. It uses Prisma, Express, Postgres, and has three main sections for Register, Login, and Dashboard.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "tags": [
+    {
+      "name": "auth",
+      "description": "User registration with JSON"
+    },
+    {
+      "name": "users",
+      "description": "Direct user registration without auth"
+    },
+    {
+      "name": "transaction",
+      "description": "Get banking system transaction data"
+    }
+  ],
+  "paths": {
+    "/auth/register": {
+      "post": {
+        "summary": "Register New User",
+        "description": "Register a new user in the system.",
+        "tags": [
+          "auth"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "description": "User's email address."
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "User's password."
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "User's name."
+                  }
+                },
+                "required": [
+                  "email",
+                  "password"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Registration successful. A token will be generated and can be used for login."
+          },
+          "400": {
+            "description": "Invalid request"
+          },
+          "409": {
+            "description": "Email is already in use"
+          }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "summary": "Log into the System",
+        "description": "Log into the system with a registered account.",
+        "tags": [
+          "auth"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "description": "User's email address."
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "User's password."
+                  },
+                  "token": {
+                    "type": "string",
+                    "description": "Authentication token for registered user."
+                  }
+                },
+                "required": [
+                  "email",
+                  "password",
+                  "token"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Login successful"
+          },
+          "400": {
+            "description": "Invalid request"
+          },
+          "401": {
+            "description": "Incorrect password"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      }
+    },
+    "/user": {
+      "post": {
+        "summary": "Create New User",
+        "description": "Create a new user in the system.",
+        "tags": [
+          "users"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "description": "User's email address."
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "User's password."
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "User's name."
+                  }
+                },
+                "required": [
+                  "email",
+                  "password"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "User created successfully"
+          },
+          "400": {
+            "description": "Invalid request"
+          },
+          "409": {
+            "description": "Email is already in use"
+          }
+        }
+      }
+    },
+    "/user/{userId}": {
+      "get": {
+        "summary": "Get User Data",
+        "description": "Read user data based on ID.",
+        "tags": [
+          "users"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "ID of the user to be read",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation successful"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update User Data",
+        "description": "Update user data based on ID.",
+        "tags": [
+          "users"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "ID of the user to be updated",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "description": "User's email address."
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "User's password."
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "User's name."
+                  }
+                },
+                "required": [
+                  "email",
+                  "password"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "User updated successfully"
+          },
+          "400": {
+            "description": "Invalid request"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete User",
+        "description": "Delete user data based on ID.",
+        "tags": [
+          "users"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "ID of the user to be deleted",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "User deleted successfully"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      }
+    },
+    "/transaction": {
+      "post": {
+        "summary": "Create New Transaction",
+        "description": "Create a new transaction in the system.",
+        "tags": [
+          "transaction"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "userId": {
+                    "type": "integer",
+                    "description": "ID of the user performing the transaction."
+                  },
+                  "amount": {
+                    "type": "number",
+                    "description": "Transaction amount."
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "Transaction description."
+                  }
+                },
+                "required": [
+                  "userId",
+                  "amount"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Transaction created successfully"
+          },
+          "400": {
+            "description": "Invalid request"
+          }
+        }
+      }
+    },
+    "/transaction/{transactionId}": {
+      "get": {
+        "summary": "Get Transaction Data",
+        "description": "Read transaction data based on ID.",
+        "tags": [
+          "transaction"
+        ],
+        "parameters": [
+          {
+            "name": "transactionId",
+            "in": "path",
+            "description": "ID of the transaction to be read",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation successful"
+          },
+          "404": {
+            "description": "Transaction not found"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update Transaction Data",
+        "description": "Update transaction data based on ID.",
+        "tags": [
+          "transaction"
+        ],
+        "parameters": [
+          {
+            "name": "transactionId",
+            "in": "path",
+            "description": "ID of the transaction to be updated",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "userId": {
+                    "type": "integer",
+                    "description": "ID of the user performing the transaction."
+                  },
+                  "amount": {
+                    "type": "number",
+                    "description": "Transaction amount."
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "Transaction description."
+                  }
+                },
+                "required": [
+                  "userId",
+                  "amount"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Transaction updated successfully"
+          },
+          "400": {
+            "description": "Invalid request"
+          },
+          "404": {
+            "description": "Transaction not found"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete Transaction",
+        "description": "Delete transaction data based on ID.",
+        "tags": [
+          "transaction"
+        ],
+        "parameters": [
+          {
+            "name": "transactionId",
+            "in": "path",
+            "description": "ID of the transaction to be deleted",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Transaction deleted successfully"
+          },
+          "404": {
+            "description": "Transaction not found"
+          }
+        }
+      }
+    }
+  }
+}
