@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build" : "prisma generate &&  prisma migrate deploy",
+    "build": "prisma generate &&  prisma migrate deploy",
     "test": "jest --coverage"
   },
   "keywords": [],
@@ -33,6 +33,7 @@
     "multer": "1.4.5-lts.1",
     "node-qr-image": "^0.0.1",
     "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0",
     "pg": "^8.11.3",
     "swagger-jsdoc": "^6.2.8",
