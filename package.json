@@ -20,6 +20,8 @@
   },
   "dependencies": {
     "@prisma/client": "5.5.2",
+    "@sentry/node": "^7.81.0",
+    "@sentry/profiling-node": "^1.2.6",
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
     "dotenv": "^16.3.1",
@@ -30,12 +32,15 @@
     "express-session": "^1.17.3",
     "imagekit": "^4.1.4",
     "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
     "multer": "1.4.5-lts.1",
     "node-qr-image": "^0.0.1",
+    "nodemailer": "^6.9.7",
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0",
     "pg": "^8.11.3",
+    "socket.io": "^4.7.2",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0"
   }
