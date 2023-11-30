@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "683e9a0d-1c50-4d4d-bc9e-2e1597775e90",
+		"name": "Documentation Endpoint_user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30166150"
+	},
+	"item": [
+		{
+			"name": "All data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://dull-lime-elephant-cape.cyclic.app/user"
+			},
+			"response": []
+		},
+		{
+			"name": "data base ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://dull-lime-elephant-cape.cyclic.app/user/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Input data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"contoh111@email.com\",\r\n  \"name\": \"Nama111\",\r\n  \"password\": \"Passs1111\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dull-lime-elephant-cape.cyclic.app/user"
+			},
+			"response": []
+		},
+		{
+			"name": "Input data with auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"contoh1000@email.com\",\r\n  \"name\": \"Name1000\",\r\n  \"password\": \"Passs1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dull-lime-elephant-cape.cyclic.app/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "login with auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"contoh1000@email.com\",\r\n  \"name\": \"Name1000\",\r\n  \"password\": \"Passs1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dull-lime-elephant-cape.cyclic.app/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"emailbaru@email.com\",\r\n  \"name\": \"Nama Baru\",\r\n  \"password\": \"PasswordBaru\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dull-lime-elephant-cape.cyclic.app/user/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete data based id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://dull-lime-elephant-cape.cyclic.app/user/19"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "be29e38c-d75e-4f6c-9daa-1efd4f37ba8e",
+		"name": "Documentation Endpoint_bank_account",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30166150"
+	},
+	"item": [
+		{
+			"name": "All data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://dull-lime-elephant-cape.cyclic.app/transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "data base ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://dull-lime-elephant-cape.cyclic.app/transaction/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Input data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bank_name\": \"Bank AYC\",\r\n  \"account_number\": \"6\",\r\n  \"balance\": 100000,\r\n  \"userId\": 11\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dull-lime-elephant-cape.cyclic.app/bank-account"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"bank_name\": \"Bank SCBD\",\r\n        \"account_number\": \"10\",\r\n        \"balance\": 123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dull-lime-elephant-cape.cyclic.app/bank-account/10"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete data based id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://dull-lime-elephant-cape.cyclic.app/bank-account/27"
+			},
+			"response": []
+		}
+	]
+}

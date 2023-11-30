@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "df94e411-fe78-4652-a218-4bd30523e587",
+		"name": "Documentation Endpoint_transaction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30166150"
+	},
+	"item": [
+		{
+			"name": "All data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://dull-lime-elephant-cape.cyclic.app/transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "data base ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://dull-lime-elephant-cape.cyclic.app/transaction/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Input data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bank_name\": \"Bank YOO\",\r\n  \"account_number\": \"1\",\r\n  \"balance\": 100000,\r\n  \"userId\": 32\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dull-lime-elephant-cape.cyclic.app/bank-account"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"account_number\": \"3\",\r\n            \"balance\": 300000,\r\n            \"transaction_detail\": \"Pembelian barang S\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dull-lime-elephant-cape.cyclic.app/transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete data based id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://dull-lime-elephant-cape.cyclic.app/transaction/7"
+			},
+			"response": []
+		}
+	]
+}
