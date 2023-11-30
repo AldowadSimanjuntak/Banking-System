@@ -7,7 +7,7 @@ const sendMail = (email, name) => {
             if (err) {
                 console.log(err);
             } else {
-                mailer.sendMailHTML(email, `Halo`, data)
+                mailer.sendMailHTML(email, `Halo, Welcome to Menu Reset Password`, data)
                     .then(info => {
                         console.log('Email sent: ' + info.response);
                     })

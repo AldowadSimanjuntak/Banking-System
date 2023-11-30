@@ -132,16 +132,16 @@ router.post('/forgot-password', async (req, res) => {
     try {
         // Kirim email ke template mail.ejs
         sendMail(email, name);
-        // Sukses mengirim email, redirect ke forgotpassword dengan pesan sukses
-        req.flash('success', 'Konfirmasi sudah berhasil. Cek email Anda.');
-        res.redirect('/forgotpassword');
+        // Sukses mengirim email, kirim respons JSON
+        res.status(200).json({ status: 'ok', message: 'Confirmation successful. Please check your Email to continue your process.' });
     } catch (error) {
         console.error(error);
-        // Gagal mengirim email
-        req.flash('error', 'Gagal mengirim email konfirmasi reset password');
-        res.redirect('/forgotpassword');
+        // Gagal mengirim email, kirim respons JSON dengan status error
+        res.status(500).json({ status: 'error', message: 'Gagal mengirim email konfirmasi reset password' });
     }
 });
+
+
 
 
 module.exports = router;

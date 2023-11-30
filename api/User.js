@@ -90,7 +90,7 @@ router.put('/:id', async (req, res) => {
       name,
       password,
     });
-    res.json({ message: 'Data pengguna berhasil diperbarui.', user: updatedUser });
+    res.json({ Status: 'Success', message: 'Data pengguna berhasil diperbarui.', user: updatedUser });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Gagal memperbarui pengguna.' });
@@ -103,7 +103,7 @@ router.delete('/:id', async (req, res) => {
 
   try {
     await deleteUserById(parseInt(id));
-    res.json({ message: 'Data pengguna berhasil dihapus.' });
+    res.json({Status: 'Success',  message: 'Data pengguna berhasil dihapus.' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Gagal menghapus pengguna.' });
