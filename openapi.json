@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "Aldowad API",
+    "title": " Banking System API",
     "description": "This is my personal API based on the OpenAPI 3.0 specification with a basic banking system where you can make CRUD operations and it is secured with JsonWebToken. It uses Prisma, Express, Postgres, and has three main sections for Register, Login, and Dashboard.",
     "version": "1.0.0"
   },
