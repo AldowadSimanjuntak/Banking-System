@@ -30,7 +30,6 @@
     "express-flash": "^0.0.2",
     "express-jwt": "^8.4.1",
     "express-session": "^1.17.3",
-    "googleapis": "^129.0.0",
     "imagekit": "^4.1.4",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
