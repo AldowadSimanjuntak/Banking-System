@@ -79,3 +79,19 @@ Read: Retrieve bank account details using /api/account-bank/:id.
 Update: Update bank account details using /api/account-bank/:id.
 
 Delete: Delete a bank account using /api/account-bank/:id.
+
+
+
+## References :
+1. [Sending Emails Securely using Node.js, Nodemailer, SMTP, Gmail, and OAuth2](https://dev.to/chandrapantachhetri/sending-emails-securely-using-node-js-nodemailer-smtp-gmail-and-oauth2-g3a)
+2. [Using Nodemailer with Google OAuth](https://stackoverflow.com/questions/51342952/using-nodemailer-with-google-oauth)
+
+
+## Contribution
+Feel free to explore the codebase and documentation to gain a deeper understanding of the project.
+
+For any questions or further information, please reach out me
+
+Thank you for visiting the repository!
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
