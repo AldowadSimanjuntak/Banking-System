@@ -90,7 +90,7 @@ Delete: Delete a bank account using /api/account-bank/:id.
 ## Contribution
 Feel free to explore the codebase and documentation to gain a deeper understanding of the project.
 
-For any questions or further information, please reach out me
+For any questions or further information, please reach out me.
 
 Thank you for visiting the repository!
 
