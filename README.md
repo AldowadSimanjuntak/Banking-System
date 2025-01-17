@@ -3,7 +3,7 @@ This is a simple web application with user authentication and transaction featur
 
 Here the link for demo : [Live Demo](https://dull-lime-elephant-cape.cyclic.app/)
 
-## Table of Contents
+# Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
@@ -11,7 +11,7 @@ Here the link for demo : [Live Demo](https://dull-lime-elephant-cape.cyclic.app/
 - [Endpoints](#endpoints)
 - [CRUD Operations](#crud-operations)
 
-## Features
+# Features
 
 1. **User Management:**
    - Register new users.
@@ -31,15 +31,15 @@ Here the link for demo : [Live Demo](https://dull-lime-elephant-cape.cyclic.app/
    - Display a personalized dashboard for each user.
    - Provide an overview of account details and transaction history.
 
-## Installation
+# Installation
 
 1. Clone the repository:
 
    ```bash
    git clone https://github.com/AldowadSimanjuntak/Banking-System
    npm install
-## Endpoints
-# User Endpoint:
+# Endpoints
+## User Endpoint:
 /api/users/register: Register a new user.
 
 /api/users/login: Authenticate a user.
@@ -48,9 +48,9 @@ Here the link for demo : [Live Demo](https://dull-lime-elephant-cape.cyclic.app/
 
 /api/users/reset-password: Reset user password.
 
-## CRUD Operations
+# CRUD Operations
 
-# User:
+## User:
 
 Create: Register a new user using /api/users/register.
 
@@ -60,7 +60,7 @@ Update: Request a password reset using /api/users/forgot-password.
 
 Delete: Reset user password using /api/users/reset-password.
 
-# Transaction:
+## Transaction:
 
 Create: Add a new transaction using /api/transactions.
 
@@ -70,7 +70,7 @@ Update: Update an existing transaction using /api/transactions/:id.
 
 Delete: Delete a transaction using /api/transactions/:id.
 
-# Bank Account:
+## Bank Account:
 
 Create: Add a new bank account using /api/account-bank.
 
@@ -91,8 +91,13 @@ Delete: Delete a bank account using /api/account-bank/:id.
 ## Contribution
 Feel free to explore the codebase and documentation to gain a deeper understanding of the project.
 
-For any questions or further information, please reach out me
+For any questions or further information, please reach out me.
 
 Thank you for visiting the repository!
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+# Screenshot example :
+
+## Endpoint User :
+![image](https://github.com/AldowadSimanjuntak/Banking-System/assets/102914659/b1bc7007-f8de-476a-b57f-897eeeabf335)
