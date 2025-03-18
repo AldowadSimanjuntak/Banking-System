@@ -1,5 +1,5 @@
 # Bangking System API
-This is a simple web application with user authentication and transaction features.The application is based on banking system, allowing you to perform secure CRUD operations using JsonWebToken. Utilizing Prisma to design database, Express for handle the request , and Postgres for database The application includes functionalities for managing users, transactions, and bank accounts. The main menu consists of registration, login, forgot password, reset password, and a user dashboard.
+This is a simple web application with user authentication and transaction features.The application is based on banking system, allowing you to perform secure CRUD operations using JsonWebToken and secure the password with bycripts. Utilizing Prisma to design database, Express for handle the request , and Postgres for database The application includes functionalities for managing users, transactions, and bank accounts. The main menu consists of registration, login, forgot password, reset password, and a user dashboard.
 
 Here the link for demo : [Live Demo](https://dull-lime-elephant-cape.cyclic.app/)
 
