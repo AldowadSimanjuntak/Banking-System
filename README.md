@@ -17,7 +17,7 @@ Here the link for demo : [Live Demo](https://dull-lime-elephant-cape.cyclic.app/
    - Register new users.
    - Authenticate users through a login system.
    - Implement a forgot password mechanism for password recovery.
-   - Allow users to reset their passwords securely.
+   - Allow users to reset their passwords.
 
 2. **Transaction Management:**
    - Perform CRUD operations on user transactions.
@@ -29,7 +29,6 @@ Here the link for demo : [Live Demo](https://dull-lime-elephant-cape.cyclic.app/
 
 4. **User Dashboard:**
    - Display a personalized dashboard for each user.
-   - Provide an overview of account details and transaction history.
 
 # Installation
 
