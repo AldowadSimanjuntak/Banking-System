@@ -1,0 +1,10 @@
+# filepath: d:\Project Backend\node-js\.github\dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/" # Lokasi file package.json berada
+    schedule:
+      interval: "weekly" # Jadwal pembaruan
+    commit-message:
+      prefix: "fix" # Prefiks pesan commit
+    versioning-strategy: "auto" # Strategi versi
