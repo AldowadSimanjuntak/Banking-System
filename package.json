@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@prisma/client": "5.5.2",
-    "@sentry/node": "^7.81.0",
+    "@sentry/node": "^9.13.0",
     "@sentry/profiling-node": "^1.2.6",
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
