@@ -9,7 +9,6 @@ Here the link for demo : [Live Demo](https://dull-lime-elephant-cape.cyclic.app/
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Endpoints](#endpoints)
 - [CRUD Operations](#crud-operations)
 
@@ -39,6 +38,17 @@ Here the link for demo : [Live Demo](https://dull-lime-elephant-cape.cyclic.app/
    ```bash
    git clone https://github.com/AldowadSimanjuntak/Banking-System
    npm install
+   
+2. Set up your .env file using .env.example as a reference.
+
+4. Run the database migration and generate Prisma Client:
+   ```bash
+      npx prisma migrate dev --name init
+      npx prisma generate
+5. Start the development server:
+   ```bash
+   pnpm dev
+
 # Endpoints
 ## User Endpoint:
 /api/users/register: Register a new user.
@@ -82,7 +92,11 @@ Update: Update bank account details using /api/account-bank/:id.
 Delete: Delete a bank account using /api/account-bank/:id.
 
 
-
+| Module         | Create                        | Read                                | Update                            | Delete                            |
+|----------------|-------------------------------|-------------------------------------|-----------------------------------|-----------------------------------|
+| **User**        | `/api/users/register`         | `/api/users/login`                  | `/api/users/forgot-password`      | `/api/users/reset-password`       |
+| **Transaction** | `/api/transactions`           | `/api/transactions/history`         | `/api/transactions/:id`           | `/api/transactions/:id`           |
+| **Bank Account**| `/api/account-bank`           | `/api/account-bank/:id`             | `/api/account-bank/:id`           | `/api/account-bank/:id`           |
 
 ## References :
 
