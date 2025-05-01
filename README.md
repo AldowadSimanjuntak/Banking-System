@@ -1,4 +1,6 @@
+# RESTFUL API
 # Bangking System API
+
 This is a simple web application with user authentication and transaction features.The application is based on banking system, allowing you to perform secure CRUD operations using JsonWebToken and secure the password with bycripts. Utilizing Prisma to design database, Express for handle the request , and Postgres for database The application includes functionalities for managing users, transactions, and bank accounts. The main menu consists of registration, login, forgot password, reset password, and a user dashboard.
 
 Here the link for demo : [Live Demo](https://dull-lime-elephant-cape.cyclic.app/)
@@ -83,8 +85,21 @@ Delete: Delete a bank account using /api/account-bank/:id.
 
 
 ## References :
-1. [Sending Emails Securely using Node.js, Nodemailer, SMTP, Gmail, and OAuth2](https://dev.to/chandrapantachhetri/sending-emails-securely-using-node-js-nodemailer-smtp-gmail-and-oauth2-g3a)
-2. [Using Nodemailer with Google OAuth](https://stackoverflow.com/questions/51342952/using-nodemailer-with-google-oauth)
+
+1. [Prisma – Next-generation Node.js and TypeScript ORM](https://www.prisma.io/docs)
+2. [Express.js – Web Framework for Node.js](https://expressjs.com/)
+3. [PostgreSQL – The World’s Most Advanced Open Source Relational Database](https://www.postgresql.org/docs/)
+4. [JSON Web Tokens (JWT) – Introduction & Guide](https://jwt.io/introduction)
+5. [BCrypt – Password Hashing Function](https://www.npmjs.com/package/bcrypt)
+6. [Nodemailer – Send Emails with Node.js](https://nodemailer.com/about/)
+7. [Sending Emails Securely using Node.js, Nodemailer, SMTP, Gmail, and OAuth2](https://dev.to/chandrapantachhetri/sending-emails-securely-using-node-js-nodemailer-smtp-gmail-and-oauth2-g3a)
+8. [Using Nodemailer with Google OAuth](https://stackoverflow.com/questions/51342952/using-nodemailer-with-google-oauth)
+9. [dotenv – Load environment variables](https://www.npmjs.com/package/dotenv)
+10. [CORS in Node.js – Enable Cross-Origin Resource Sharing](https://expressjs.com/en/resources/middleware/cors.html)
+11. [Middleware in Express.js – How It Works](https://expressjs.com/en/guide/using-middleware.html)
+12. [RESTful API Design – Best Practices](https://restfulapi.net/)
+
+
 
 
 ## Contribution
