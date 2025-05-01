@@ -4,7 +4,9 @@ updates:
   - package-ecosystem: "npm"
     directory: "/" # Lokasi file package.json berada
     schedule:
-      interval: "weekly" # Jadwal pembaruan
+      interval: "daily" # Jadwal pembaruan
     commit-message:
       prefix: "fix" # Prefiks pesan commit
-    versioning-strategy: "auto" # Strategi versi
+      versioning-strategy: "auto" # Strategi versi
+    allow:
+      - dependency-type: "all"
