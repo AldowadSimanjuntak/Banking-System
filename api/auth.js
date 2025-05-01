@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const { PrismaClient } = require('@prisma/client');
 const { encryptPassword, checkPassword } = require('../utils/auth');
 const { signToken } = require('../utils/jwt'); // Mengimpor fungsi JWT yang sudah Anda buat
 
+const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
 // Rute untuk pendaftaran pengguna (POST /auth/register)

@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { PrismaClient } = require('@prisma/client');
-
 const prisma = new PrismaClient();
-
 const createTransaction = async (data) => {
   return await prisma.transaction.create({
     data,

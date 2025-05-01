@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
+
 const { PrismaClient } = require('@prisma/client');
+
+const prisma = new PrismaClient();
 const { encryptPassword, checkPassword } = require('../utils/auth');
 
 const sendMailModule = require('../nodemailer/sendmail'); 
 const sendMail = sendMailModule.sendMail;
-
-
-const prisma = new PrismaClient();
 
 // Rute untuk pendaftaran pengguna (POST /views/router/register)
 router.post('/register', async (req, res) => {

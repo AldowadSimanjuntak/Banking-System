@@ -1,9 +1,8 @@
 const express = require('express');
 const router = express.Router();
+
 const { PrismaClient } = require('@prisma/client');
-
 const prisma = new PrismaClient();
-
 // Fungsi untuk membuat pengguna
 const createUser = async (data) => {
   return await prisma.user.create({
