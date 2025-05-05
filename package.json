@@ -36,7 +36,7 @@
     "multer": "1.4.5-lts.2",
     "node-qr-image": "^0.0.1",
     "nodemailer": "^7.0.2",
-    "passport": "^0.6.0",
+    "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0",
     "pg": "^8.15.6",
