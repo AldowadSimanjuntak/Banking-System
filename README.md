@@ -1,11 +1,46 @@
 # Banking System RESTful API
 
-This project is a comprehensive RESTful API designed for a banking system. It enables secure CRUD operations for users, transactions, and bank accounts, leveraging technologies like **Express.js** for routing, **Prisma** as the ORM, and **PostgreSQL** as the database. The API also integrates **JSON Web Tokens (JWT)** for authentication and **bcrypt** for password hashing. Additional features include file uploads using **Multer**, error monitoring with **Sentry**, and API documentation via **Swagger**. This system ensures robust performance and security for managing banking operations.
+This project is a **Banking System RESTful API** designed to manage users, transactions, and bank accounts securely and efficiently. It provides a robust backend for performing CRUD operations, user authentication, and file uploads. The API is built with modern technologies to ensure scalability, security, and performance.
 
-# RESTFUL API
-# Bangking System API
+## Features
 
-This is a simple web application with user authentication and transaction features.The application is based on banking system, allowing you to perform secure CRUD operations using JsonWebToken and secure the password with bycripts. Utilizing Prisma to design database, Express for handle the request , and Postgres for database The application includes functionalities for managing users, transactions, and bank accounts. The main menu consists of registration, login, forgot password, reset password, and a user dashboard.
+1. **User Management**:
+   - User registration, login, and authentication using **JSON Web Tokens (JWT)**.
+   - Password recovery with secure reset mechanisms.
+   - User dashboard for personalized data.
+
+2. **Transaction Management**:
+   - Create, read, update, and delete transactions.
+   - View transaction history.
+
+3. **Bank Account Management**:
+   - CRUD operations for bank accounts.
+   - Manage account details securely.
+
+4. **File Uploads**:
+   - Upload images locally or to **ImageKit** using **Multer**.
+
+5. **Error Monitoring**:
+   - Integrated with **Sentry** for error tracking and performance monitoring.
+
+6. **API Documentation**:
+   - Comprehensive API documentation using **Swagger UI**.
+
+7. **Code Quality**:
+   - Middleware logging with **Morgan**.
+
+## Tech Stack
+
+- **Backend Framework**: [Express.js](https://expressjs.com/) - A fast and minimalist web framework for Node.js.
+- **Database**: [PostgreSQL](https://www.postgresql.org/) - A powerful open-source relational database.
+- **ORM**: [Prisma](https://www.prisma.io/) - A next-generation ORM for database management.
+- **Authentication**: [JSON Web Tokens (JWT)](https://jwt.io/) - Secure token-based authentication.
+- **Password Hashing**: [bcrypt](https://www.npmjs.com/package/bcrypt) - Secure password hashing.
+- **File Uploads**: [Multer](https://www.npmjs.com/package/multer) - Middleware for handling file uploads.
+- **Error Monitoring**: [Sentry](https://sentry.io/) - Real-time error tracking and performance monitoring.
+- **API Documentation**: [Swagger UI](https://swagger.io/tools/swagger-ui/) - Interactive API documentation.
+- **Testing & Coverage**: [Istanbul](https://istanbul.js.org/) - Code coverage analysis.
+- **View Engine**: [EJS](https://ejs.co/) - Embedded JavaScript templates for rendering views.
 
 Here the link for demo : [Live Demo](https://dull-lime-elephant-cape.cyclic.app/)
 
