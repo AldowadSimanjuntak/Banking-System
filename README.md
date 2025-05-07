@@ -1,3 +1,7 @@
+# Banking System RESTful API
+
+This project is a comprehensive RESTful API designed for a banking system. It enables secure CRUD operations for users, transactions, and bank accounts, leveraging technologies like **Express.js** for routing, **Prisma** as the ORM, and **PostgreSQL** as the database. The API also integrates **JSON Web Tokens (JWT)** for authentication and **bcrypt** for password hashing. Additional features include file uploads using **Multer**, error monitoring with **Sentry**, and API documentation via **Swagger**. This system ensures robust performance and security for managing banking operations.
+
 # RESTFUL API
 # Bangking System API
 
