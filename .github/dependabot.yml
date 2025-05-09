@@ -7,6 +7,10 @@ updates:
       interval: "daily" # Jadwal pembaruan
     commit-message:
       prefix: "fix" # Prefiks pesan commit
+      include: "scope" # Sertakan cakupan perubahan dalam pesan commit
       versioning-strategy: "auto" # Strategi versi
     allow:
       - dependency-type: "all"
+    auto-merge: # Konfigurasi auto-merge
+      method: "squash" # Metode merge (bisa "merge", "squash", atau "rebase")
+      commit-message: "pull-request-title" # Gunakan judul pull request sebagai pesan commit
