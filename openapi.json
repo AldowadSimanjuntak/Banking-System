@@ -8,9 +8,6 @@
   "servers": [
     {
       "url": "http://localhost:3000"
-    },
-    {
-      "url": "https://dull-lime-elephant-cape.cyclic.app"
     }
   ],
   "tags": [

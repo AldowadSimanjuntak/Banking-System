@@ -1,3 +1,4 @@
+<% const baseUrl = typeof BASE_URL !== 'undefined' ? BASE_URL : 'http://localhost:3000'; %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,22 +103,22 @@
 
     <div class="btn-container">
       <!-- Button for Endpoint Transaction -->
-      <a href="https://dull-lime-elephant-cape.cyclic.app/transaction" class="btn btn-endpoint" target="_blank">Endpoint Transaction</a>
+      <a href="<%= baseUrl %>/transaction" class="btn btn-endpoint" target="_blank">Endpoint Transaction</a>
       
       <!-- Button for Endpoint User -->
-      <a href="https://dull-lime-elephant-cape.cyclic.app/user" class="btn btn-endpoint" target="_blank">Endpoint User</a>
+      <a href="<%= baseUrl %>/user" class="btn btn-endpoint" target="_blank">Endpoint User</a>
 
       <!-- Button for Endpoint Account Bank -->
-      <a href="https://dull-lime-elephant-cape.cyclic.app/bank-account" class="btn btn-endpoint" target="_blank">Endpoint Account Bank</a>
+      <a href="<%= baseUrl %>/bank-account" class="btn btn-endpoint" target="_blank">Endpoint Account Bank</a>
 
       <!-- Button for User Actions - Register -->
-      <a href="https://dull-lime-elephant-cape.cyclic.app/register" class="btn btn-user" target="_blank">Register</a>
+      <a href="<%= baseUrl %>/register" class="btn btn-user" target="_blank">Register</a>
 
       <!-- Button for User Actions - Login -->
-      <a href="https://dull-lime-elephant-cape.cyclic.app/Login" class="btn btn-user" target="_blank">Login</a>
+      <a href="<%= baseUrl %>/login" class="btn btn-user" target="_blank">Login</a>
 
       <!-- Button for User docs - documentations -->
-      <a href="https://dull-lime-elephant-cape.cyclic.app/docs/" class="btn btn-documentation" target="_blank">Documentations</a>
+      <a href="<%= baseUrl %>/docs/" class="btn btn-documentation" target="_blank">Documentations</a>
     </div>
     <h3>
       Developed by Aldowad
