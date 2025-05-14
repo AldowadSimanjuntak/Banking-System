@@ -1405,7 +1405,7 @@ packages:
     resolution: {integrity: sha512-n0H13YVfynZJnKQLHoTlyBK2P960X8+B08za9VaRnJ4zikDx23Xk2Owtj006ZUItUKtKLFi70NyQGGDp7gVAyw==}
     engines: {node: '>=18'}
     dependencies:
-      '@fastify/otel': github.com/getsentry/fastify-otel/d6bb1756c3db3d00d4d82c39c93ee3316e06d305(@opentelemetry/api@1.9.0)
+      '@fastify/otel': github.com/getsentry/fastify-otel/ae3088d65e286bdc94ac5d722573537d6a6671bb(@opentelemetry/api@1.9.0)
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/context-async-hooks': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
@@ -4671,9 +4671,9 @@ packages:
       commander: 9.5.0
     dev: false
 
-  github.com/getsentry/fastify-otel/d6bb1756c3db3d00d4d82c39c93ee3316e06d305(@opentelemetry/api@1.9.0):
-    resolution: {tarball: https://codeload.github.com/getsentry/fastify-otel/tar.gz/d6bb1756c3db3d00d4d82c39c93ee3316e06d305}
-    id: github.com/getsentry/fastify-otel/d6bb1756c3db3d00d4d82c39c93ee3316e06d305
+  github.com/getsentry/fastify-otel/ae3088d65e286bdc94ac5d722573537d6a6671bb(@opentelemetry/api@1.9.0):
+    resolution: {tarball: https://codeload.github.com/getsentry/fastify-otel/tar.gz/ae3088d65e286bdc94ac5d722573537d6a6671bb}
+    id: github.com/getsentry/fastify-otel/ae3088d65e286bdc94ac5d722573537d6a6671bb
     name: '@fastify/otel'
     version: 0.8.0
     peerDependencies:
