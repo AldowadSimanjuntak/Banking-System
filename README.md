@@ -1,6 +1,6 @@
 # Banking System RESTful API
 
-This project is a **Banking System RESTful API** designed to manage users, transactions, and bank accounts securely and efficiently. It provides a robust backend for performing CRUD operations, user authentication, and file uploads. The API is built with modern technologies to ensure scalability, security, and performance.
+This project is a **Banking System RESTful API** designed to manage users, transactions, and bank accounts securely and efficiently. It provides a robust backend for performing CRUD operations, user authentication, and file uploads. The API is built with modern technologies to ensure scalability, security, and performance. 
 
 ## Features
 
