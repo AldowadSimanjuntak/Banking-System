@@ -1,6 +1,6 @@
 # Banking System RESTful API
 
-This project is a **Banking System RESTful API** designed to manage users, transactions, and bank accounts securely and efficiently. It provides a robust backend for performing CRUD operations, user authentication, and file uploads. The API is built with modern technologies to ensure scalability, security, and performance.
+This project is a **Banking System RESTful API** designed to manage users, transactions, and bank accounts securely and efficiently. It provides a robust backend for performing CRUD operations, user authentication, and file uploads. The API is built with modern technologies to ensure scalability, security, and performance. 
 
 ## Features
 
@@ -155,12 +155,7 @@ Delete: Delete a bank account using /api/account-bank/:id.
 
 
 
-## Contribution
-Feel free to explore the codebase and documentation to gain a deeper understanding of the project.
 
-For any questions or further information, please reach out me.
-
-Thank you for visiting the repository!
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -168,3 +163,17 @@ Thank you for visiting the repository!
 
 ## Endpoint User :
 ![image](https://github.com/AldowadSimanjuntak/Banking-System/assets/102914659/b1bc7007-f8de-476a-b57f-897eeeabf335)
+
+## Endpoint Transaction :
+![image](https://github.com/user-attachments/assets/30d5ff0f-fc4b-4b35-a5f0-27ecc665317e)
+
+## Endpoint Bank Account :
+![image](https://github.com/user-attachments/assets/fe6744e6-7628-4591-b758-b6ed9ddef43f)
+
+
+# Contribution
+Feel free to explore the codebase and documentation to gain a deeper understanding of the project.
+
+For any questions or further information, please reach out me.
+
+Thank you for visiting the repository!
