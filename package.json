@@ -24,6 +24,7 @@
     "@sentry/profiling-node": "^9.17.0",
     "bcryptjs": "^3.0.2",
     "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",

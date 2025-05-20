@@ -1,8 +1,51 @@
 const express = require('express');
 const router = express.Router();
+const { verifyToken } = require('../utils/jwt');
 
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
+
+// Middleware untuk verifikasi token
+const authenticateToken = async (req, res, next) => {
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1];
+
+  if (!token) {
+    return res.status(401).json({ error: 'Token tidak ditemukan' });
+  }
+
+  try {
+    const user = await verifyToken(token);
+    req.user = user;
+    next();
+  } catch (error) {
+    return res.status(403).json({ error: 'Token tidak valid' });
+  }
+};
+
+// Rute untuk mendapatkan profil pengguna
+router.get('/profile', authenticateToken, async (req, res) => {
+  try {
+    const user = await prisma.user.findUnique({
+      where: { id: req.user.id },
+      select: {
+        id: true,
+        name: true,
+        email: true
+      }
+    });
+
+    if (!user) {
+      return res.status(404).json({ error: 'Pengguna tidak ditemukan' });
+    }
+
+    res.json(user);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Terjadi kesalahan saat mengambil data pengguna' });
+  }
+});
+
 // Fungsi untuk membuat pengguna
 const createUser = async (data) => {
   return await prisma.user.create({

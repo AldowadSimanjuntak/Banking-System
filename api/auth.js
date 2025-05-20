@@ -61,7 +61,16 @@ router.post('/login', async (req, res) => {
     // Jika login berhasil, buat token JWT
     const token = signToken({ id: user.id, email: user.email, name: user.name });
 
-    res.json({ status: 'success', message: 'Login berhasil', user: { id: user.id, email: user.email, name: user.name } });
+    res.json({ 
+      status: 'success', 
+      message: 'Login berhasil', 
+      token,
+      user: { 
+        id: user.id, 
+        email: user.email, 
+        name: user.name 
+      } 
+    });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Gagal login' });
