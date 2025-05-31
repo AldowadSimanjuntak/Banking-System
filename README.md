@@ -127,3 +127,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Express.js Documentation](https://expressjs.com/)
 - [Prisma Documentation](https://www.prisma.io/docs)
+
+# Screenshot example :
+
+## Endpoint User :
+![image](https://github.com/AldowadSimanjuntak/Banking-System/assets/102914659/b1bc7007-f8de-476a-b57f-897eeeabf335)
+
+## Endpoint Transaction :
+![image](https://github.com/user-attachments/assets/30d5ff0f-fc4b-4b35-a5f0-27ecc665317e)
+
+## Endpoint Bank Account :
+![image](https://github.com/user-attachments/assets/fe6744e6-7628-4591-b758-b6ed9ddef43f)
+
