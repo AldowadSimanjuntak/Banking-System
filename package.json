@@ -6,12 +6,15 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "prisma generate &&  prisma migrate deploy",
+    "build": "prisma generate && prisma migrate deploy",
     "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "18.x"
+  },
   "devDependencies": {
     "jest": "^29.7.0",
     "nodemon": "^3.1.10",
