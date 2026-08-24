@@ -37,7 +37,7 @@
     "imagekit": "^6.0.0",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
-    "multer": "1.4.5-lts.2",
+    "multer": "2.2.0",
     "node-qr-image": "^0.0.1",
     "nodemailer": "^7.0.3",
     "passport": "^0.7.0",
