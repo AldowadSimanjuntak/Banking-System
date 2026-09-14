@@ -22,7 +22,7 @@
     "supertest": "^7.1.1"
   },
   "dependencies": {
-    "@prisma/client": "7.9.1",
+    "@prisma/client": "7.10.0",
     "@sentry/node": "^10.70.0",
     "@sentry/profiling-node": "^10.69.0",
     "bcryptjs": "^3.0.2",
