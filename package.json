@@ -39,7 +39,7 @@
     "morgan": "^1.10.0",
     "multer": "2.3.0",
     "node-qr-image": "^0.0.1",
-    "nodemailer": "^7.0.3",
+    "nodemailer": "^10.0.9",
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0",
